@@ -7,7 +7,7 @@ const TaskStats = () => {
   useEffect(() => {
     const fetchStats = async () => {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/tasks/stats', {
+      const response = await axios.get('https://todoapp-1-t8e9.onrender.com/api/tasks/tasks', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
